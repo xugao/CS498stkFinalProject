@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<script type="text/javascript" src="/js/util.js"></script>
+		<meta name="viewport" content="initial-scale=1.0, " />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/preety.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/_ah/channel/jsapi"></script>
+<script type="text/javascript" src="/js/util.js"></script>
+	</head>
+	<body>
+		<div class = "pageContainer">
+			<div class="headerContainer"><div class ="headerTitle">View User Info:</div><span style='float:right'><div id ="unreadMsg"></div></span></div>
+
+		
+		User Name: <div id = 'userName'></div><br>
+		music: <div id = 'musics'>{{ musics }}</div><br>
+		games： <div id = 'games'>{{ games }} <br></div><br>
+		sports: <div id = 'sports'>{{ sports }} <br></div><br>
+		movies: <div id = 'movies'>{{ movies }}</div> <br>
+		</div>
+	</body>
+</html>
+
+<script>
+	var url = (document.URL);
+	var arr = url.split("nickname=");
+	document.getElementById('userName').textContent = arr[1] ;
+
+	getInterests("movies", moviesArr);
+	getInterests("musics", musicsArr);
+	getInterests("games", gamesArr);
+	getInterests("sports", sportsArr);
+
+	function getInterests(cateName, glbName)
+	{
+		var strCate = document.getElementById(cateName).textContent;
+		var jsonObj = JSON.parse(strCate);
+
+		if (jsonObj.length == 0)
+		{
+			var ret =  "No genre mentioned.";
+			document.getElementById(cateName).textContent = ret;
+			return;
+		}
+
+		var ret = glbName[jsonObj[0]];
+		for (var k = 1 ; k < jsonObj.length; k++)
+		{
+			var index = jsonObj[k];
+			var intName = glbName[index];
+			ret += ","+ intName;
+
+		}
+		document.getElementById(cateName).textContent = ret;
+		return;
+	}
+
+
+</script>

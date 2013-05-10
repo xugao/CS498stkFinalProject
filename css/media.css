@@ -1,0 +1,157 @@
+@media screen and (max-width: 1800px) {
+    
+    .pageContainer{
+            width:90%; 
+            margin:0 auto;
+            
+            margin-top:0%;
+            height: 100%;
+            
+        }
+
+     .headerContainer
+      {
+        width: 100%;
+        height: 5%;
+        //position: absolute;
+        padding-top:1%;
+        background-color:#B0E0E6;
+        
+
+      }
+
+      .btn
+      {
+
+       
+        margin-right: 2%;
+      }
+
+      .headerTitle
+      {
+            margin-left:2%;
+            font-size: 26px;
+            color: white;
+      }
+
+      #displayPlace{
+      width:100%;
+      height:55%;
+    
+      margin-top:.5%;
+      margin-bottom:2%;
+      //background-color:silver;
+      overflow: scroll;
+      border: 1px dashed silver;
+    }
+
+    .enterPlace{
+
+      width:100%;
+      height:25%;
+      
+    }
+
+    .myMsgBox{
+      float: left;
+      margin-left: 2%;
+      margin-right: 5%;
+      background-color: #CCFF33;
+      clear:both;
+      margin-top: 1%;
+
+    }
+
+    .respBox{
+      float:right;
+      margin-right:2%;
+      margin-left: 5%;
+      background-color: #D0DDEB;
+      clear:both;
+      margin-top:1%;
+    }
+       
+}
+
+@media screen and (max-width: 768px) {
+
+        
+        body { 
+                font-size: 72.5%;
+        }
+        
+        .selection{
+            width: 100%;
+            background-color: red;
+        }
+
+        .pageContainer{
+            width:94%;
+
+            
+        }
+
+        .locationWrapper{
+          width:80%;
+         
+        }
+
+       h1 {
+            font-size:30px;
+        }
+
+    .headerTitle
+      {
+            margin-left:2%;
+            font-size: 22px;
+            color: white;
+      }
+     
+
+}
+
+@media screen and (max-width: 480px) {
+
+        .pageContainer{
+            width:100%;
+           
+            padding: 0px;
+            margin: 0px;
+        }
+
+        table
+        {
+            width:76%
+        }
+        
+        body { 
+                font-size: 60.5%;
+        }
+
+        #mapholder{
+          width:100%;
+          
+         }
+
+
+         h1 {
+            font-size:24px;
+         }
+
+         .headerContainer
+         {
+            
+            height: 8%;
+           
+         }
+
+        .headerTitle
+      {
+           
+            font-size: 20px;
+            margin-top:2%;
+            
+      }
+
+        
+}

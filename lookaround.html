@@ -1,0 +1,33 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<script type="text/javascript" src="/_ah/channel/jsapi"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="/js/util.js"></script>
+<script type="text/javascript" src="/js/lookaround.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" type="text/css" href="css/preety.css">
+<link rel="stylesheet" type="text/css" href="css/media.css">
+<body>
+	<script>
+	    channel = new goog.appengine.Channel('{{ token }}');
+	    socket = channel.open();
+	    socket.onmessage = onMessage;
+	</script>
+
+	<div style="display:none">You are logged in as: <div id = 'nickName'>{{ nickname }}</div></div>
+
+	<section class = "pageContainer" >
+
+		  <div class="headerContainer"><div class = "headerTitle">People NearBy: </div><span style='float:right'><div id ="unreadMsg"></div></span></div>
+	</section>
+
+	<style>
+		   
+	</style>
+</body>
+</html>
+

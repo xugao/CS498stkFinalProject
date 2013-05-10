@@ -1,0 +1,85 @@
+<html>
+ <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDydOP3uoYwVLlNLJJrSFG59IpsCFf76Mc&sensor=true">
+ </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/_ah/channel/jsapi"></script>
+<script type="text/javascript" src="/js/util.js"></script>
+
+
+<meta name="viewport" content="initial-scale=1.0, " />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/preety.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
+
+
+
+ <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+
+      #mapholder { height: 50% ; width:80%; 
+                  text-align: center;
+                  margin: 0 auto}
+
+      .pageContainer
+      {
+        height: 100%; 
+        
+        text-align:center; 
+        margin-top:0;
+      }
+
+      .locationWrapper{
+          width:60%;
+          margin:0 auto;
+      }
+    </style>
+
+
+<body>
+
+  <script>
+      channel = new goog.appengine.Channel('{{ token }}');
+      socket = channel.open();
+      socket.onmessage = onMessage;
+  </script>
+	<div class = 'pageContainer' >
+      <div class="headerContainer"><span style='float:right'><div id ="unreadMsg"></div></span></div>
+      
+        
+        <h1>LookAround.</h1>
+        
+        <div><b>Your Are Logged in as: </b> <span id ='nickName'>{{ nickname }}</span></div>
+
+      	<div><b>Your coordinates:</b> <span id="coordinateholder"></span> </div>
+
+      	<div><b>Your location:</b><br> <span id="locationholder"></span></div>
+      	<div id="mapholder"></div>
+
+      	<a class = "btn btn-mini btn-info"href = '/about'>Edit Profile</a>
+        <a class = "btn btn-success btn-mini" href = '/lookaround'>People Near By</a>
+        <a class = "btn btn-warning btn-mini" href = '{{ logoutUrl }}'> logout </a>
+    
+  </div>
+
+  
+
+  <script>
+
+  </script>
+
+
+
+</body>
+
+<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDydOP3uoYwVLlNLJJrSFG59IpsCFf76Mc&sensor=true">  
+</script>
+   
+
+</html>

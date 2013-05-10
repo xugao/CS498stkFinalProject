@@ -1,0 +1,163 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.0.custom.css">
+<link rel="stylesheet" type="text/css" href="css/media.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<script type="text/javascript" src="/js/about.js"></script>
+
+  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+ 
+  <script>
+  $(function() {
+    $( "#musicsSection" ).accordion({collapsible: true, heightStyle: "content"} );
+	$( "#moviesSection" ).accordion({collapsible: true, heightStyle: "content"}); 
+	$( "#sportsSection" ).accordion({collapsible: true, heightStyle: "content"}); 
+	$( "#gamesSection" ).accordion({collapsible: true, heightStyle: "content"}); 
+});
+  </script>
+
+ 
+  <section class = "selection">
+  	  <div class="headerContainer"><div class = "headerTitle">Interests</div><span style='float:right'><div id ="unreadMsg"></div></span></div>
+
+	<div id="musicsSection" >
+	  <h3>Music</h3>
+	 <div>
+	 	<span style='width:45%; float:left'>
+		  	<input type="checkbox" name="music" value = '0'/> African <br>
+			<input type="checkbox" name="music" value = '1'/> Blues <br>
+			<input type="checkbox" name="music" value = '2'/> Caribbean <br>
+			<input type="checkbox" name="music" value = '3'/> Classical <br>
+			<input type="checkbox" name="music" value = '4'/> Country <br>
+			<input type="checkbox" name="music" value = '5'/> Electronic <br>
+		</span>
+		<span  style='width:45%; float:right'>
+			<input type="checkbox" name="music" value = '6'/> Jazz <br>
+			<input type="checkbox" name="music" value = '7'/> Latin <br>
+			<input type="checkbox" name="music" value = '8'/> R&B <br>
+			<input type="checkbox" name="music" value = '9'/> Rap <br>
+			<input type="checkbox" name="music" value = '10'/> HipHop <br>
+			<input type="checkbox" name="music" value = '11'/> Rock <br>
+		</span>
+		
+	 </div>
+  	</div>
+
+
+  	<div id="moviesSection" >
+	  <h3>Movie</h3>
+
+	  <div>
+	  	<span style='width:45%; float:left'>
+	  		<input type="checkbox" name="movie" value = '0'/> Action <br>
+			<input type="checkbox" name="movie" value = '1'/> Adult<br>
+			<input type="checkbox" name="movie" value = '2'/> Adventrue<br>
+			<input type="checkbox" name="movie" value = '3'/> Animation<br>
+			<input type="checkbox" name="movie" value = '4'/> Biography<br>
+			<input type="checkbox" name="movie" value = '5'/> Comedy<br>
+			<input type="checkbox" name="movie" value = '6'/> Crime<br>
+			<input type="checkbox" name="movie" value = '7'/> Drama<br>
+		</span>
+		<span style='width:45%; float:right'>
+			<input type="checkbox" name="movie" value = '8'/> Document<br>
+			<input type="checkbox" name="movie" value = '9'/> Fantacy<br>
+			<input type="checkbox" name="movie" value = '10'/> History<br>
+			<input type="checkbox" name="movie" value = '11'/> Horror<br>
+			<input type="checkbox" name="movie" value = '12'/> Musical<br>
+			<input type="checkbox" name="movie" value = '13'/> Mystery<br>
+			<input type="checkbox" name="movie" value = '14'/> Romance<br>
+			<input type="checkbox" name="movie" value = '15'/> Science<br>
+		</span>
+	  </div>
+  	</div>
+
+  	<div id="sportsSection" >
+	  <h3>Sports</h3>
+
+	  <div>
+	  		<span style='width:45%; float:left'>
+		  		<input type="checkbox" name="sport" value = '0'/> Badminton<br>
+				<input type="checkbox" name="sport" value = '1'/> Baseball<br>
+				<input type="checkbox" name="sport" value = '2'/> BasketBall<br>
+				<input type="checkbox" name="sport" value = '3'/> Bowling<br>
+				<input type="checkbox" name="sport" value = '4'/> Boxing<br>
+				<input type="checkbox" name="sport" value = '5'/> Football<br>
+				<input type="checkbox" name="sport" value = '6'/> Golf<br>
+			</span>
+			<span style='width:45%; float:right'>
+				<input type="checkbox" name="sport" value = '7'/> Racing<br>
+				<input type="checkbox" name="sport" value = '8'/> Soccer<br>
+				<input type="checkbox" name="sport" value = '9'/> Skiing<br>
+				<input type="checkbox" name="sport" value = '10'/> Swimming<br>
+				<input type="checkbox" name="sport" value = '11'/> Tennis<br>
+				<input type="checkbox" name="sport" value = '12'/> Volleyball<br>
+			</span>
+		
+	  </div>
+  	</div>
+
+  	<div id="gamesSection"  >
+	  <h3>Gamess</h3>
+
+	  <div>
+	  		<span style='width:45%; float:left'>
+		  		<input type="checkbox" name="game" value = '0'/> Puzzle<br>
+				<input type="checkbox" name="game" value = '1'/>Hidden Object<br>
+				<input type="checkbox" name="game" value = '2'/>Time Management<br>
+				<input type="checkbox" name="game" value = '3'/>Adventure<br>
+				<input type="checkbox" name="game" value = '4'/>Match Three	<br>		
+				<input type="checkbox" name="game" value = '5'/>Strategy<br>
+				<input type="checkbox" name="game" value = '6'/>Marble Popper<br>
+			</span>
+			<span style='width:45%; float:right'>
+				<input type="checkbox" name="game" value = '7'/>Arcade<br>
+			
+				<input type="checkbox" name="game" value = '8'/>Action<br>
+				<input type="checkbox" name="game" value = '9'/>Mahjong<br>
+				<input type="checkbox" name="game" value = '10'/>Card<br>
+				<input type="checkbox" name="game" value = '11'/>Board<br>
+				<input type="checkbox" name="game" value = '12'/>Brain Teaser <br>
+				<input type="checkbox" name="game" value = '13'/>Family<br>
+			</span>
+		
+	  </div>
+  	</div>
+
+  </section>
+
+  	<section style = "display:none">
+  		Musics: <div type = 'text'  name ='hidden_music' id = 'hidden_music'></div>
+  		Movies: <div type = 'text'  name ='hidden_movie' id = 'hidden_movie'></div>
+  		Sports: <div type = 'text'  name ='hidden_movie' id = 'hidden_sport'></div>
+  		Games: <div type = 'text'  name ='hidden_movie' id = 'hidden_game'></div>
+  	 </section>
+  		<button class="btn btn-default" onclick = 'getAllChecked();'/> Save </button>
+  	
+
+
+
+
+</body>
+<style>
+	   .selection{
+        width: 90%;
+        margin: 0 auto;
+        background-color: yellow;
+
+    }
+</style>
+
+<div id = 'myDiv' value = '{{ nickname }}' style="display:none">{{ nickname }}</div>
+
+</html>
+
+<script>
+
+	
+</script>
